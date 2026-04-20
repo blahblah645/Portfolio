@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film - Leo's Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+    }
+
+    :root {
+      --bg: #372C2E;
+      --text: #f6f6f2;
+      --accent: #DE9E48;
+      --muted: #f5f4df;
+
+      --project-a: #4A393C;
+      --project-b: #2F2527;
+    }
+
+    .page-title {
+      min-height: unset;
+      padding: 2rem 9% 1.5rem;
+    }
+
+    .film-projects {
+      min-height: unset;
+      padding: 0.5rem 6% 5rem;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: var(--bg);
+      color: var(--text);
+      padding-top: 120px;
+    }
+
+
+
+    .page-title {
+      padding: 4rem 9% 2rem;
+      text-align: center;
+    }
+
+    .page-title h1 {
+      font-size: 3.2rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-title p {
+      color: var(--muted);
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .film-projects {
+      padding: 1rem 6% 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .film-project {
+      border-radius: 24px;
+      padding: 2rem;
+      overflow: hidden;
+      border: 2px solid rgba(222, 158, 72, 0.18);
+    }
+
+    .film-project:nth-child(odd) {
+      background: var(--project-a);
+    }
+
+    .film-project:nth-child(even) {
+      background: var(--project-b);
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .media-grid iframe,
+    .media-grid video,
+    .media-grid img {
+      width: 100%;
+      display: block;
+      border: none;
+      border-radius: 16px;
+      background: #1d1718;
+      box-shadow: 0 0 0 2px rgba(222, 158, 72, 0.22);
+    }
+
+    .media-grid iframe,
+    .media-grid video {
+      aspect-ratio: 16 / 9;
+    }
+
+    .media-grid img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .project-writing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .project-heading h2 {
+      font-size: 2rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-heading h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .project-body p {
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 1rem;
+    }
+
+ @media (max-width: 1000px) {
+  .project-writing {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 2.4rem;
+  }
+
+  .film-project {
+    padding: 1.25rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Leo</a>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="engineering.html" class="nav-link">Engineering</a>
+                <a href="ceramics.html" class="nav-link">Ceramics</a>
+                <a href="film.html" class="active">Film</a>
+                <a href="photography.html" class="nav-link">Photography</a>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.linkedin.com/in/leo-nhuch-me" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/leo.nhuch/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <i class = "fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+  <section class="page-title">
+    <h1>Film</h1>
+  </p>
+    For these projects, I worked in a small group of students to rewrite the screenplay, find locations in Marin county to film, recruit actors, film, and edit.
+  </p>
+  </section>
+
+  <section class="film-projects">
+
+    <article class="film-project">
+
+  <!-- VIDEO ONLY -->
+        <div class="media-single">
+            <video controls>
+                <source src="Silence of the Lambs Newest Cut.mp4" type="video/mp4">
+            </video>
+        </div>
+
+  <!-- WRITING BELOW -->
+        <div class="project-writing">
+            <div class="project-heading">
+                <h3>October 2025 - Feburary 2026</h3>
+                <h2>Silence of the Lambs Remake</h2>
+            </div>
+
+        <div class="project-body">
+        <p>As Director of Photography, I was in charge of planning out the shots and maintaining equiptment. Additionally, I won The Best Director of Photography at our project's public showcase.</p>
+            </div>
+        </div>
+    </article>
+
+
+    <article class="film-project">
+        <div class="media-single">
+            <video controls>
+                <source src="Fish For you (1).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="project-writing">
+            <div class="project-heading">
+                <h3>April 2025 - June 2025</h3>
+                <h2>Fish for You</h2>
+            </div>
+
+        <div class="project-body">
+      <p>I was nominated as the director for this project. I worked alongside peers to ensure the team stayed ahead deadlines, communicated with actors to plan shots, and frequently communicated with our teachers to show our team's progress.</p>
+            </div>
+        </div>
+    </article>
+
+    
+    <article class="film-project">
+        <div class="media-single">
+            <video controls>
+                <source src="Copy of Goodfellas FC v2 (1).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="project-writing">
+            <div class="project-heading">
+                <h3>October 2024 - March 2025</h3>
+                <h2>Goodfellas Remake</h2>
+            </div>
+
+        <div class="project-body">
+      <p>As assistant direct, I often supported our team's director as he navigated daily tasks. This opportunity was a really good chance for me to get comfortable at managing teams, ultimatly leading me to become director for the next project I worked on.</p>
+        </div>
+        </div>
+    </article>
+
+    </article>
+
+
+  </section>
+
+</body>
+</html>

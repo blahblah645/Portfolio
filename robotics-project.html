@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wind Tunnel Media</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 12px;
+      background: #372C2E;
+    }
+
+    .media-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .media-stack img,
+    .media-stack video,
+    .media-stack iframe {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      border: 3px solid #DE9E48;
+      box-sizing: border-box;
+      background: black;
+    }
+
+    .media-stack video {
+      height: auto;
+    }
+
+    .youtube-embed {
+      aspect-ratio: 16 / 9;
+      min-height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="media-stack">
+    <img src="IMG_1158.jpg" alt="Trebuchet">
+
+    <video controls>
+      <source src="IMG_1237.mov" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="IMG_1046.mov" type="video/mp4">
+    </video>
+
+    <img src="IMG_5825.jpg" alt="work">
+
+    <video controls>
+      <source src="DE1CA54F-F2BE-4891-88A5-B11DBF5E67EE.MP4" type="video/mp4">
+    </video>
+
+  </div>
+</body>
+</html>

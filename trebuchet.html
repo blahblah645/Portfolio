@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wind Tunnel Media</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 12px;
+      background: #372C2E;
+    }
+
+    .media-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .media-stack img,
+    .media-stack video,
+    .media-stack iframe {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      border: 3px solid #DE9E48;
+      box-sizing: border-box;
+      background: black;
+    }
+
+    .media-stack video {
+      height: auto;
+    }
+
+    .youtube-embed {
+      aspect-ratio: 16 / 9;
+      min-height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="media-stack">
+    <img src="IMG_7707 (1).jpg" alt="Trebuchet">
+
+    <video controls>
+      <source src="IMG_7781 (3).mov" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="IMG_7532 (1).mov" type="video/mp4">
+    </video>
+
+    <img src="IMG_7604.jpg" alt="Fabrication with CNC Machine">
+
+  </div>
+</body>
+</html>
